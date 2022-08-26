@@ -29,7 +29,7 @@ public class Handlers {
 
                 write(writer,"HTTP Метод",method);
                 write(writer,"Запрос",uri.toString());
-                write(writer,"Обработан через корневой",cxtPath);
+                write(writer,"Обработан через",cxtPath);
                 writeHeaders(writer,"Заголовки запроса",exchange.getResponseHeaders());
                 writeData(writer,exchange);
                 writer.flush();
